@@ -15,7 +15,7 @@ directory = os.path.dirname(os.path.realpath(__file__)) + '/RunningShoes'
 if not os.path.exists(directory):
     os.makedirs(directory)
 
-domain = conn.lookup('refresh-12-28')
+domain = conn.lookup('refresh-01-11')
 
 page_index = 0
 
@@ -23,7 +23,7 @@ size = 100
 
 search_service = domain.get_search_service()
 
-results = search_service.search(q="(prefix field='brandcard_category_ids' 'Running Road Shoes')", parser="structured", size=size)
+results = search_service.search(q="(prefix field='brandcard_category_ids' 'Running Trail Shoes')", parser="structured", size=size)
 
 total_pages = results.num_pages_needed
 
