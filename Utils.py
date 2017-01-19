@@ -7,8 +7,8 @@ import posixpath
 import boto.cloudsearch
 
 conn = boto.connect_cloudsearch2(region="us-east-1",
-                aws_access_key_id='AKIAIWCSSPJXIVZTN4KA',
-                aws_secret_access_key='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')
+                aws_access_key_id='',
+                aws_secret_access_key='')
 
 directory = os.path.dirname(os.path.realpath(__file__)) + '/RunningShoes'
 
